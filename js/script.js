@@ -159,7 +159,7 @@ document.querySelector('#asiderlinks').addEventListener('click',function(){
     let t =  document.getElementsByName('bg')
         if(t[1].checked){
             document.body.style.backgroundColor="white"
-            document.body.style.color="black"
+            document.body.style.color="rgb(44, 42, 33"
 
          let propavisos = document.querySelectorAll('.estruturas .avisos ')
             for(i=0;i<propavisos.length;i++){
@@ -205,5 +205,11 @@ let ham = document.querySelector(".hamburguer").addEventListener('click',functio
         
     }
 })
+document.querySelector('aside').addEventListener('click',function(){
+    var largura = window.screen.width
 
-
+    if(largura < 800){
+        document.querySelector('aside').style.display="none"
+        }
+    }
+)

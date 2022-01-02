@@ -7,6 +7,7 @@
     --bxshadow:rgb(61, 63, 65);
     --bgest:#ccc;
     --white:rgb(255, 255, 255);
+    --avisos:(darkred);
 }
 .descricao h2{
     position: relative;
@@ -20,7 +21,7 @@ h3{
 }
 
 body{
-
+    font-family: 'Roboto', sans-serif;
     color:var(--textside);
 
 }
@@ -39,6 +40,7 @@ body{
     
     z-index: 0;
     color: rgba(0, 0, 0, .8);
+    font-weight: bolder;
     background-color: var(--gold);
 
 }
@@ -79,6 +81,7 @@ aside h2{
 }
 aside img{
     transition: .4s ease-in-out;
+    cursor: pointer;
 }
 aside img:hover{
     width: 60%;
@@ -196,6 +199,7 @@ img{
     margin-top: 50px;
     font-style: italic;
     background-color:gold;
+    color: var(--avisos);
     padding: 5px;
 }
 .avisos .aspasesquerda {
@@ -215,7 +219,6 @@ img{
 .avisos{
     margin-top: 40px;
     width: 200px;
-    height: 400px;
     object-fit:fill;
     margin: 10px;
     border-radius: 15px;
@@ -254,8 +257,12 @@ img{
     background-color: royalblue;
     width: 300px;
     margin: 10px;
+    border-radius: 15px;
 
 
+}
+.videos .descricao{
+    margin-top: -50px;
 }
 @media (max-width:768px){
     body{
@@ -266,7 +273,7 @@ img{
         margin: 5px;
     }
 .hamburguer .line{
-    width: 100px;
+    width: 60px;
     height: 10px;
     background-color:goldenrod;
     padding: 5px;
@@ -288,6 +295,7 @@ aside{
         width: 100vw;
         margin-top: 50px;
         padding: 5px;
+        transition:1s smooth;
     }
 aside .logo{
         display: none;
@@ -304,8 +312,8 @@ aside h2{
         flex-direction:column;
     }
 .estruturas img{
-        width: 80vw;
-        height: 60vh;
+        width: 70vw;
+        height: 40vh;
         margin-bottom: 30px;
         margin-left: 40px;
     }
@@ -338,5 +346,13 @@ aside h2{
     }
  aside .logo:hover{
         width: 10%;
+    }
+    .ramal img{
+        width: 70vw;
+        height: 40vh;
+        margin-top: 20px;
+    }
+    .none{
+        display: none;
     }
 }
